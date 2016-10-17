@@ -87,7 +87,7 @@ WebPushHandler.prototype.saveRegistrationId = function(endpoint) {
 };
 WebPushHandler.prototype.initCustomPopup = function() {
     var _this = this;
-    $('body').append('<div class="pushLtBox"><div id="pushPopup" class="pushPrompt"><div><p class="caption">Get Notified for New Jobs</p><p class="desc">You can turn them off anytime time from browser settings</p></div><span id="block" class="fr pushBtn later">Later</span><span id="allow" class="fr pushBtn sure">Sure</span></div></div>');
+    $('body').append('<div class="pushLtBox"><div id="pushPopup" class="pushPrompt"><div><p class="caption">Get Notified for New Things</p><p class="desc">You can turn them off anytime time from browser settings</p></div><span id="block" class="fr pushBtn later">Later</span><span id="allow" class="fr pushBtn sure">Sure</span></div></div>');
     setTimeout(function() {
         $('.pushLtBox').addClass('animate');
     }, 10);
