@@ -40,9 +40,9 @@ WebPushHandler.prototype.subscribe = function() {
             })
             .catch(function(e) {
                 if (Notification.permission === 'denied') {
-                    throw new Error('Permission for Notifications was denied');
+                    throw new Error('Permission for Notifications was denied'+e);
                 } else {
-                    throw new Error('Unable to subscribe to push.');
+                    throw new Error(e);
                 }
             });
     });
