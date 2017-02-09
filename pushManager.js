@@ -109,14 +109,14 @@ WebPushHandler.prototype.bindEvents = function() {
 };
 WebPushHandler.prototype.trackSubscription = function() {
     try {
-        _gaq.push(['_trackEvent', 'BNotification', 'click', 'Enabled']);
+        
     } catch (err) {
         throw new Error(err);
     }
 };
 WebPushHandler.prototype.trackBlockNotification = function() {
     try {
-        _gaq.push(['_trackEvent', 'BNotification', 'click', 'Blocked']);
+       
     } catch (err) {
         throw new Error(err);
     }
@@ -124,7 +124,7 @@ WebPushHandler.prototype.trackBlockNotification = function() {
 };
 WebPushHandler.prototype.trackNotifyMeLater = function() {
     try {
-        _gaq.push(['_trackEvent', 'BNotification', 'click', 'NotifyLater']);
+        
     } catch (err) {
         throw new Error(err);
     }
