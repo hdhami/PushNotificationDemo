@@ -81,7 +81,9 @@ WebPushHandler.prototype.saveRegistrationId = function(endpoint) {
             'X-Requested-With': 'XMLHttpRequest',
             'X-IsAjaxForm': '1'
         }),
-        body: 'endpoint=' + encodeURIComponent(endpoint),
+        body: {
+            endpoint:endpoint
+        },
         credentials: 'include'
     })['catch'](function() {});
 };
